@@ -50,13 +50,16 @@
   {
     "pedido": "P1-05",
     "cliente": "C105",
-    "estado": "confirmado",
-    "items": [
-      {"producto": "TOM-CJ", "cantidad": 2}
-    ],
+    "estado": "ambiguo",
+    "items": null,
     "direccion": {"calle": "Espiruna", "altura": 1710, "nodo": 217},
     "franja": {"desde": "10:00:00", "hasta": "12:00:00"},
-    "motivos": []
+    "motivos": [
+      {
+        "campo": "items",
+        "detalle": "El mensaje pide dos de tomate sin indicar la unidad: no dice cajones, kilos ni unidades. El catálogo vende tomate por cajón de 20 kg y el historial de C105 no tiene pedidos de tomate, así que no se puede confirmar que sean dos cajones."
+      }
+    ]
   },
   {
     "pedido": "P1-06",
